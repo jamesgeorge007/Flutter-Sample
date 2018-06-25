@@ -2,7 +2,7 @@
 
 > This a sample cross-platform application which fetches data from an API asynchronously and renders it on to the screen as a       ListView following Material Design principles. 
 
-# Instructions
+## Instructions
 
 - clone the repository
 - View the online documentation to know how to configure your IDE for Flutter and Dart and also running the app.
