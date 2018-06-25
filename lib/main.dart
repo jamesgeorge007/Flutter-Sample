@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import './views/view_cell.dart';
 
 void main() => runApp(new RealWorldApp());
 
@@ -35,7 +36,7 @@ class RealWorldState extends State<RealWorldApp> {
     return new MaterialApp(
         home: new Scaffold(
             appBar: new AppBar(
-              title: new Text("Sample Text"),
+              title: new Text("Real World App"),
               actions: <Widget>[
                 new IconButton(
                   icon: new Icon(Icons.refresh),
@@ -53,20 +54,8 @@ class RealWorldState extends State<RealWorldApp> {
                         itemCount: this.videos.length,
                         itemBuilder: (context, i) {
                           final video = this.videos[i];
-                          return new Column(
-                            children: <Widget>[
-                              new Container(
-                                padding: new EdgeInsets.all(16.0),
-                                child: new Column(
-                                  children: <Widget>[
-                                  new Image.network(video["imageUrl"]),
-                                  new Text(video["name"]),
-                                  ]
-                                ),
-                              ),
-                              new Divider()
-                            ],
-                          );
+                          return new VideoCell(video);
                         }))));
   }
 }
+
