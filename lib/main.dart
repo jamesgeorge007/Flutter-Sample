@@ -54,8 +54,30 @@ class RealWorldState extends State<RealWorldApp> {
                         itemCount: this.videos.length,
                         itemBuilder: (context, i) {
                           final video = this.videos[i];
-                          return new VideoCell(video);
+                          new FlatButton(
+                            padding: EdgeInsets.all(0.0),
+                          child: new VideoCell(video),
+                          onPressed: () {
+                           print('$i Pressed');
+                           Navigator.push(context, 
+                           new MaterialPageRoute(
+                             builder: (context) => new Text("New state")
+                           ));
+                          },
+                          );
                         }))));
   }
+}
+
+class DetailPage extends StatelessWidget{
+  @override
+    Widget build(BuildContext context) {
+      return new Scaffold(
+        appBar: new AppBar(
+          title: new Text("Details page")
+        ),
+        body: new Center(child: new Text("Sample"),)
+      );
+    }
 }
 
