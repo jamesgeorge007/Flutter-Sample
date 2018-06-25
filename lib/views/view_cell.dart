@@ -26,3 +26,4 @@ class VideoCell extends StatelessWidget{
                             ],
                           );
 }
+}

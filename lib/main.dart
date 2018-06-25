@@ -61,7 +61,7 @@ class RealWorldState extends State<RealWorldApp> {
                            print('$i Pressed');
                            Navigator.push(context, 
                            new MaterialPageRoute(
-                             builder: (context) => new Text("New state")
+                             builder: (context) => DetailPage()
                            ));
                           },
                           );
