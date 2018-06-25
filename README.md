@@ -1,8 +1,12 @@
-# real_world_app
+<h1 align="center">Sample Real World App</h1>
 
-A new Flutter project.
+> This a sample cross-platform application which fetches data from an API asynchronously and renders it on to the screen as a       ListView following Material Design principles. 
 
-## Getting Started
+# Instructions
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+- clone the repository
+- View the online documentation to know how to configure your IDE for Flutter and Dart and also running the app.
+- Navigate to the project directory 
+- Once you have a running virtual or physical device just run ```flutter run```
+
+
