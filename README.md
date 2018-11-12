@@ -5,7 +5,7 @@
 ## Instructions
 
 - clone the repository
-- View the online documentation to know how to configure your IDE for Flutter and Dart and also running the app.
+- View the online [documentation](https://flutter.io/docs/development/tools/ide/vs-code) to know how to configure your IDE for Flutter and Dart and also running the app.
 - Navigate to the project directory 
 - Once you have a running virtual or physical device just run ```flutter run```
 
